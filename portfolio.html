@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teja Kurella - Portfolio</title>
+<!-- <link rel="stylesheet" href="style.css" /> -->
+</head>
+<body>
+
+  <header>
+    <h1>Teja Kurella</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Kurella Teja Sri Nagaraj, a B.Tech Computer Science student passionate about full stack development and cloud technologies. I enjoy building secure and scalable web applications.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill-container">
+    <div>
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>MySQL</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Communication</li>
+        <li>Patience</li>
+        <li>Time Management</li>
+        <li>Adaptability</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>Blockchain Banking (Java Full Stack)</h3>
+    <p>Created a secure banking system using blockchain and encryption, minimizing fraud with no tokens.</p>
+</div>
+<div class="project">
+  <h3>Alcohol Awareness in Rural Areas</h3>
+  <p>Led a community IoT project on age verification to regulate alcohol sales and raise awareness.</p>
+</div>
+<div class="project">
+  <h3>House Price Prediction (IJCRT Paper)</h3>
+  <p>Published ML project using regression techniques to forecast house prices with great accuracy.</p>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+<form id="contactForm">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+<p>© 2025 Teja Kurella | <a href="https://github.com/mrkurellateja" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/teja-kurella-65a810265" target="_blank">LinkedIn</a></p>
+</footer>
+
+<!-- <script src="script.js"></script> -->
+</body>
+</html>
+<style>
+
+
+* {
+margin: 0;
+padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f5fff8;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right, #38b000, #007f5f);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #007f5f;
+  margin-bottom: 1rem;
+}
+
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skill-container ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.project {
+  background: #e6ffe6;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 5px solid #38b000;
+}
+
+form {
+    display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input, form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background: #38b000;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background: #2c7300;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #007f5f;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skill-container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+</style>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert("Thanks for reaching out! I'll get back to you soon.");
+  this.reset();
+});
+
+</script>
